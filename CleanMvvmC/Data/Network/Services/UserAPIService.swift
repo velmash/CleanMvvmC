@@ -11,7 +11,7 @@ protocol UserAPIServiceType {
     func getUser(by id: String) -> Observable<APIResult<UserDTO>>
     func createUser(_ user: UserDTO) -> Observable<APIResult<UserDTO>>
     func updateUser(id: String, user: UserDTO) -> Observable<APIResult<UserDTO>>
-    func deleteUser(id: String) -> Observable<APIResult<Void>>
+//    func deleteUser(id: String) -> Observable<APIResult<Void>>
 }
 
 class UserAPIService: BaseAPIService, UserAPIServiceType {
@@ -39,11 +39,11 @@ class UserAPIService: BaseAPIService, UserAPIServiceType {
             }
     }
     
-    func deleteUser(id: String) -> Observable<APIResult<Void>> {
-        return networkService.requestWithEmptyResponse(.deleteUser(id: id))
-            .map { APIResult.success(()) }
-            .catch { error in
-                .just(.failure(error as? NetworkError ?? .unknown))
-            }
-    }
+//    func deleteUser(id: String) -> Observable<APIResult<Void>> {
+//        return networkService.requestWithEmptyResponse(.deleteUser(id: id))
+//            .map { APIResult.success(()) }
+//            .catch { error in
+//                .just(.failure(error as? NetworkError ?? .unknown))
+//            }
+//    }
 }
