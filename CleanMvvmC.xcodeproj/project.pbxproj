@@ -61,7 +61,6 @@
 				3A740C792D1CDB9600348114 /* Domain */,
 				3A740C7A2D1CDB9B00348114 /* Data */,
 				3A740C7B2D1CDBAA00348114 /* Presentation */,
-				3A740C6D2D1CDB3900348114 /* MainViewController.swift */,
 			);
 			path = CleanMvvmC;
 			sourceTree = "<group>";
@@ -93,6 +92,7 @@
 		3A740C7B2D1CDBAA00348114 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3A740C6D2D1CDB3900348114 /* MainViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
